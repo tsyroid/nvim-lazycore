@@ -28,3 +28,6 @@ keymap("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move current line down" })
 -- 'H'/'L' to jump start/end of line
 keymap("n", "H", "^", { desc = "Move cursor to start (first char) of line" })
 keymap("n", "L", "$", { desc = "Move cursor to end (last char) of line" })
+
+-- Dhruvmanila/browser-bookmarks.nvim
+keymap("n", "<leader>bb", ":Telescope bookmarks<CR>", { desc = "Search Brave Bookmarks" })
