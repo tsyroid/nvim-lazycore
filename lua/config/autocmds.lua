@@ -9,3 +9,11 @@ vim.api.nvim_create_autocmd("Filetype", {
     vim.opt_local.formatoptions:remove({ "r", "o" })
   end,
 })
+
+-- Disable spellcheck in markdown and text file
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "text" },
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
