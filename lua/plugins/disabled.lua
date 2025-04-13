@@ -4,5 +4,5 @@
 return {
   { "catppuccin/nvim", enabled = false },
   { "saghen/blink.cmp", enabled = false },
-  { "nvim-orgmode/orgmode", enabled = true },
+  { "nvim-orgmode/orgmode", enabled = false },
 }
